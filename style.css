@@ -1,0 +1,181 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: grey;
+  gap: 4em;
+  flex-direction: column;
+}
+main .clock {
+  height: 400px;
+  width: 400px;
+  border: 2px solid black;
+  border-radius: 50%;
+  position: relative;
+  box-shadow: 1px 5px 15px rgb(0, 0, 0);
+  background-color: black;
+  color: white;
+}
+main .clock .numbers {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+main .clock .numbers .number {
+  height: 100%;
+  position: absolute;
+  font-size: 2em;
+  background-color: green;
+}
+main .clock .numbers .one {
+  transform: rotate(30deg);
+}
+main .clock .numbers .one span {
+  position: absolute;
+  transform: translate(-50%) rotate(-30deg);
+}
+main .clock .numbers .two {
+  transform: rotate(60deg);
+}
+main .clock .numbers .two span {
+  position: absolute;
+  transform: translate(-50%) rotate(-60deg);
+}
+main .clock .numbers .three {
+  transform: rotate(90deg);
+}
+main .clock .numbers .three span {
+  position: absolute;
+  transform: translate(-50%) rotate(-90deg);
+}
+main .clock .numbers .four {
+  transform: rotate(120deg);
+}
+main .clock .numbers .four span {
+  position: absolute;
+  transform: translate(-50%) rotate(-120deg);
+}
+main .clock .numbers .five {
+  transform: rotate(150deg);
+}
+main .clock .numbers .five span {
+  position: absolute;
+  transform: translate(-50%) rotate(-150deg);
+}
+main .clock .numbers .six {
+  transform: rotate(180deg);
+}
+main .clock .numbers .six span {
+  position: absolute;
+  transform: translate(-50%) rotate(-180deg);
+}
+main .clock .numbers .seven {
+  transform: rotate(210deg);
+}
+main .clock .numbers .seven span {
+  position: absolute;
+  transform: translate(-50%) rotate(-210deg);
+}
+main .clock .numbers .eight {
+  transform: rotate(240deg);
+}
+main .clock .numbers .eight span {
+  position: absolute;
+  transform: translate(-50%) rotate(-240deg);
+}
+main .clock .numbers .nine {
+  transform: rotate(270deg);
+}
+main .clock .numbers .nine span {
+  position: absolute;
+  transform: translate(-50%) rotate(-270deg);
+}
+main .clock .numbers .ten {
+  transform: rotate(300deg);
+}
+main .clock .numbers .ten span {
+  position: absolute;
+  transform: translate(-50%) rotate(-300deg);
+}
+main .clock .numbers .eleone {
+  transform: rotate(330deg);
+}
+main .clock .numbers .eleone span {
+  position: absolute;
+  transform: translate(-50%) rotate(-330deg);
+}
+main .clock .numbers .twel {
+  transform: rotate(360deg);
+}
+main .clock .numbers .twel span {
+  position: absolute;
+  transform: translate(-50%) rotate(-360deg);
+}
+main .clock .numbers .hands {
+  position: absolute;
+  top: 0%;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .clock .numbers .hands .second {
+  height: 40%;
+  position: absolute;
+  width: 2px;
+  background-color: white;
+  transform: translateY(-50%);
+  border-radius: 2em;
+}
+main .clock .numbers .hands .minute {
+  position: absolute;
+  height: 30%;
+  width: 4px;
+  background-color: white;
+  transform: translateY(-50%);
+  border-radius: 2em;
+}
+main .clock .numbers .hands .hour {
+  position: absolute;
+  height: 20%;
+  width: 5px;
+  background-color: gold;
+  transform: translateY(-50%);
+  border-radius: 2em;
+}
+main .clock .numbers .hands .center {
+  height: 10px;
+  width: 10px;
+  background-color: red;
+  border-radius: 50%;
+  z-index: 999;
+}
+main button {
+  font-weight: 600;
+  font-size: 2em;
+  padding: 0.5em;
+  border-radius: 0.5em;
+  cursor: pointer;
+  border: none;
+}
+main button:active {
+  transform: scale(0.8);
+}/*# sourceMappingURL=style.css.map */
