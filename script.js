@@ -13,8 +13,6 @@ setInterval(function(){
     let second = date.getSeconds();
     let minute = date.getMinutes();
     let hour = date.getHours();
-
-    console.log(hour);
     
     seconds.style.transform = `rotate(${second * 6}deg) translateY(-50%)`
    hours.style.transform = `rotate(${(hour * 30)+(minute /60)*30}deg) translateY(-50%)`
@@ -24,13 +22,30 @@ setInterval(function(){
 
 
 btn.addEventListener("click",()=>{
-    console.log("click");
+ 
     
     if(flag === 0){
+        
         main.style.backgroundColor = "grey"
+        clock.style.backgroundColor = "black"
+        seconds.style.backgroundColor = "white"
+        minutes.style.backgroundColor = "white"
+        btn.style.backgroundColor = "white"
+        btn.style.color = "black"
+        clock.style.color = "white"
+        btn.textContent = "Light-Mode"
+        
         flag = 1;
     }else{
         main.style.backgroundColor = "white"
+        clock.style.backgroundColor = "white"
+        seconds.style.backgroundColor = "black"
+        minutes.style.backgroundColor = "black"
+        btn.style.backgroundColor = "black"
+        btn.style.color = "white"
+        clock.style.color = "black"
+        btn.textContent = "Dark-Mode"
+
         flag = 0;
     }
 })

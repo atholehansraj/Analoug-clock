@@ -16,7 +16,7 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: grey;
+    // background-color: grey;
     gap: 4em;
     flex-direction: column;
 
@@ -27,8 +27,8 @@ main{
         border-radius: 50%;
         position: relative;
         box-shadow: 1px 5px 15px rgb(0, 0, 0);
-        background-color: black;
-        color: white;
+        // background-color: black;
+        // color: white;
         
 
         
@@ -163,7 +163,7 @@ main{
                     height: 40%;
                     position: absolute;
                     width: 2px;   
-                    background-color: white;
+                    background-color: black;
                     transform: translateY(-50%);
                     border-radius: 2em;
                 }
@@ -171,7 +171,7 @@ main{
                     position: absolute;
                     height: 30%;
                     width: 4px;   
-                    background-color: white;
+                    background-color: black;
                     transform: translateY(-50%);
                     border-radius: 2em;
                 }
@@ -204,10 +204,19 @@ main{
         border-radius: 0.5em;
         cursor: pointer;
         border: none;
+        background-color: black;
+        color: white;
         
 
         &:active{
-            transform: scale(0.8);
+            transform: scale(0.9);
+        }
+    }
+
+    @media (max-width:400px) {
+        .clock{
+            height:300px ;
+            width: 300px;
         }
     }
 }
