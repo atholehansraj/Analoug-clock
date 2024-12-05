@@ -141,6 +141,7 @@ main .clock .numbers .hands .second {
   background-color: black;
   transform: translateY(-50%);
   border-radius: 2em;
+  z-index: 1;
 }
 main .clock .numbers .hands .minute {
   position: absolute;
@@ -167,9 +168,9 @@ main .clock .numbers .hands .center {
 }
 main button {
   font-weight: 600;
-  font-size: 2em;
+  font-size: 1.7em;
   padding: 0.5em;
-  border-radius: 0.5em;
+  border-radius: 0.2em;
   cursor: pointer;
   border: none;
   background-color: black;
